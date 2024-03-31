@@ -27,7 +27,7 @@ export default class Scenario extends Scene {
         this.params.timezone = "Europe/Paris"
         this.params.fontSize = 30;
         this.params.fontName = 'Arial';
-        this.params.centerY = this.height / 2 + 250;
+        this.params.centerY = this.height / 2 - 180;
         this.params.color = "#ffffff"
         this.params.flagColor = "#ffffff";
 
@@ -109,11 +109,11 @@ export default class Scenario extends Scene {
             'Europe/Paris': 'FR',
             'America/New_York': 'USA',
             'Asia/Shanghai': 'CH',
-            'Asia/Tokyo': 'JA'
+            'Asia/Tokyo': 'JP'
         };
     
         const centerX = this.width / 2;
-        const centerY = this.height / 2 + 100;
+        const centerY = this.height / 2 - 60;
     
         this.context.font = `${this.params.fontSize}px ${this.params.fontName}`;
         this.context.textAlign = 'center';
